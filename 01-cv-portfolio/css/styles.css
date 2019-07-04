@@ -53,8 +53,7 @@ h4{ font-size: 1.3em; }
 h5{ font-size: 1em; }
 h6{ font-size: .9em; letter-spacing: 1px; }
 
-/* a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1; 
-	-webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out; } */
+/* a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 0.8} */
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
@@ -75,7 +74,6 @@ button{ outline: 0; border: 0; background: none; cursor: pointer; }
 [class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
 
 b.max-bold{ font-weight: 700; }
-
 
 
 /* ---------------------------------
