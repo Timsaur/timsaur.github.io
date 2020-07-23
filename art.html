@@ -26,6 +26,14 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+    	function change_back(url){
+    		document.getElementById('imageElement').style=style="background-image: url(images/" + url + "); background-position: center; background-size: contain; background-repeat: no-repeat;";
+    		document.getElementById('art_text').textContent = "";
+    	}
+    </script>
+
   </head>
   <body>
 
@@ -56,45 +64,25 @@
 		</aside> <!-- END COLORLIB-ASIDE -->
 		
 		<div id="colorlib-main">
-			<section class="home-slider js-fullheight owl-carousel">
-	      <div class="slider-item js-fullheight" style="background-image:url(images/bg_1.jpg);">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid">
-	          <div class="row no-gutters slider-text slider-text-2 js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-	          <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-	            <h1 style="color:#323232;" class="mb-4">Elen Henderson</h1>
-	            <p style="color:#626262;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Find great places to stay, eat, shop, or visit from local experts</p>
-	          </div>
-
-	        </div>
-	        </div>
-	      </div>
-	    </section>
+			<div class="js-fullheight" data-stellar-background-ratio="0.5" style="background-image: url(images/bg_1.jpg); background-position: center;" id="imageElement">	
+					<div class="overlay"></div>
+					<div class="js-fullheight d-flex justify-content-center align-items-center">
+						<div class="col-md-8 text text-center">
+							<div class="desc">
+								<!-- <h2 class="subheading">Hello I'm</h2> -->
+								<h1 class="mb-4" style="font-weight: 900; font-size:60px" id = "art_text">Artwork</h1>
+								<!-- <p class="mb-4">I am A Blogger Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> -->
+							</div>
+						</div>
+					</div>
+			</div>
 
 		<!-- <div id="colorlib-main"> -->
 			<section class="ftco-section-2">
 				<div class="photograhy">
 					<div class="row no-gutters">
-						<div class="col-md-3">
-							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/image_1.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center">
-									<h3>Work 01</h3>
-									<span>Technology</span>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/image_2.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center">
-									<h3>Work 02</h3>
-									<span>Nature</span>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/image_3.jpg);">
+						<div class="col-md-3" onclick="change_back('todays_catch.jpg')">
+							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/todays_catch.jpg);">
 								<div class="overlay"></div>
 								<div class="text text-center">
 									<h3>Work 03</h3>
@@ -102,8 +90,17 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-md-3">
-							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/image_4.jpg);">
+						<div class="col-md-3" onclick="change_back('oh_deer.jpg')" />
+							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/oh_deer.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center">
+									<h3>Work 01</h3>
+									<span>Technology</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3" onclick="change_back('still_life.jpg')">
+							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/still_life.jpg);">
 								<div class="overlay"></div>
 								<div class="text text-center">
 									<h3>Work 04</h3>
@@ -111,8 +108,17 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-md-3">
-							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/image_5.jpg);">
+						<div class="col-md-3" onclick="change_back('ink_home.jpg')">
+							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/ink_home.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center">
+									<h3>Work 02</h3>
+									<span>Nature</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3" onclick="change_back('lab_rat.jpg')">
+							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/lab_rat.jpg);">
 								<div class="overlay"></div>
 								<div class="text text-center">
 									<h3>Work 05</h3>
@@ -120,8 +126,8 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-md-3">
-							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/image_6.jpg);">
+						<div class="col-md-3" onclick="change_back('hands.jpg')">
+							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/hands.jpg);">
 								<div class="overlay"></div>
 								<div class="text text-center">
 									<h3>Work 06</h3>
@@ -129,8 +135,8 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-md-3">
-							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/image_7.jpg);">
+						<div class="col-md-3" onclick="change_back('grandfather.jpg')">
+							<a href="#" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/grandfather.jpg);">
 								<div class="overlay"></div>
 								<div class="text text-center">
 									<h3>Work 07</h3>
